@@ -21,3 +21,89 @@ body{
     padding: var(--container-padding);
     margin:0 auto;
 }
+.container-left{
+    padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+.header{
+    position:relative;
+    min-height: 940px;
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+}
+.header::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 96px;
+    bottom:0;
+    left:0;
+    background-image:url(../image/header/Vector\ 6.svg);
+    background-size: 100%;
+
+}
+/* header top */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo a{
+    font-weight: 700;
+    font-size: 20px;
+    color:white;
+}
+.nav_list{
+    display:flex;
+    gap:80px;
+}
+.nav_link{
+    color:white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-signup{
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+}
+.login-login{
+    margin-left:25px;
+    font-size: 15px;
+    color:white;
+    padding:13px 44px;
+    background:linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius:100px;
+}
+.header_content{
+    margin-top: 95px;
+}
+.header_content-box{
+    background:rgba(255, 255, 255, 0.25);
+    color:#fff;
+    display: inline-block;
+    padding:12px 30px;
+    border-radius:15px;
+    margin-bottom:7px;
+}
+.header_content-title{
+    width:592px;
+    font-size: 55px;
+    font-weight: 400;
+    color:white;
+}
+.header_content-text{
+    margin-top: 30px;
+    width: 519px;
+    font-weight: 700;
+    font-size:25px;
+    color:white;
+    opacity: 0.5;
+}
+.header_content-btn{
+    margin-top:68px;
+    border-radius:27px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    color:white;
+    font-size:25px;
+    font-weight: 600;
+    padding:26px 48px;
+}
